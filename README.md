@@ -1,2 +1,4 @@
 # compare-cycles-in1go
 For special cases of capturing data for only one cycle, while logging data using NI-DAQ, we often end up getting an open loop where close loop is desired. Due presence of noise in sensitive measurements several cycles are logged in separate files. These data are saved in TSV /CSV format, which can be opened using spreadsheet programs such as Ms-excel and then plot to see the graph. When the number of files is huge it's tedious to find the right presentable graph. This scripts will ease the process by producing JPG files of all the files in folder, after which these can be instantly compared.
+
+Put a set of files to be compared in one folder along with these scripts. By default the files need to be named as 1.lvm, 2.lvm etc. They need to be of TVS format. Then open TSV_XLSX.m script. Set the start and end file number. Hit run.
